@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Rotterburg;
+  src: url(./assets/fonts/Rotterburg\ Display\ Font.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:#191919;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  color:#c9ac8c !important;
+  border-bottom: 2px solid #c9ac8c !important;
+}
+
+.navbar-active {
+  transform: rotate(180deg);
+}
+
+.menu-active {
+   right: 10px !important;
+   opacity: 1 !important;
+   z-index: 100 !important;
+}
+
+.profile-active {
+  opacity: 1 !important;
+  right: 60px !important;
+  z-index: 100 !important;
 }
